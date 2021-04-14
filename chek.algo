@@ -1,0 +1,26 @@
+ALGORITHM chekpoint
+VAR
+ch:STRING
+nbc, nbv,nbm,nbp, i:integer;
+BEGIN
+
+     i:=0 ;
+    nbc:=0;
+    nbv:=0;
+    nbm:=1;
+    REPEAT
+
+    writeln ('donnder une chaine de caractére');
+    readln(ch);
+        UNTIL (ch[ch.length-1] ='.')
+    
+FOR i FROM 1 TO length(ch) STEP 1 DO
+        if (ch[i] =' ')
+        nbm:= nbm+1:
+        END_IF
+    if (ch[i]='a' or ch[i]='e' ch[i]='i' or ch[i]='u' or ch[i]='y' or ch[i]='o' or ch[i]='A' or ch[i]='E' or ch[i]='O' or ch[i]='Y' )
+        nbv:=nbv+1;
+        END_IF
+        end while 
+        writeln ('nombre de voyelle est:',nbv,'nombre de mot est:',nbm);
+        END 
